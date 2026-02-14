@@ -78,7 +78,7 @@ export default function App() {
               <br />
               source code on{" "}
               <Link
-                href="https://github.com/sipneat/ibm-carbon-dashboard"
+                href="https://github.com/sipneat/ibm-monitoring-dashboard"
                 target="_blank"
               >
                 GitHub
