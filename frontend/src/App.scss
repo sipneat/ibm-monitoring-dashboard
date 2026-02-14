@@ -1,0 +1,25 @@
+@use '@carbon/react';
+@use '@carbon/styles/scss/theme';
+@use '@carbon/styles/scss/themes';
+
+:root[data-carbon-theme='g10'] {
+  @include theme.theme(themes.$g10);
+}
+
+:root[data-carbon-theme='g100'] {
+  @include theme.theme(themes.$g100);
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+}
