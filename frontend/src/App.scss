@@ -12,9 +12,19 @@
 
 .dashboard-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: 1fr;
   gap: 20px;
   padding: 20px;
+
+  // 2x2 layout for medium screens (tablets)
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  // 4x1 layout for large screens (desktops)
+  @media (min-width: 1800px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .app-header {

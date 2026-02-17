@@ -10,7 +10,7 @@ RUN npm run build
 FROM node:22-alpine
 WORKDIR /app/server
 COPY backend/package*.json ./
-RUN npm install --production
+RUN npm install --omit=dev
 COPY backend/index.js ./
 COPY --from=frontend-builder /app/frontend/dist ./client/build
 
